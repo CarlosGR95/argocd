@@ -4,13 +4,13 @@ metadata:
   name: my-first-app
   namespace: argocd
 spec:
-  project: devops-platform
+  project: default
   source:
     repoURL: https://github.com/CarlosGR95/argocd
-    path: argocd/app
+    path: app
     targetRevision: HEAD
   destination:
     server: https://kubernetes.default.svc
-    namespace: argocd
+    namespace: default
   syncPolicy:
     automated: {}
