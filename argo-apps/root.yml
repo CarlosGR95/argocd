@@ -9,7 +9,7 @@ spec:
   source:
     repoURL: https://github.com/CarlosGR95/argocd
     path: argo-apps
-    targetRevision: feature-app3
+    targetRevision: master
   destination:
     server: https://kubernetes.default.svc
     namespace: default
