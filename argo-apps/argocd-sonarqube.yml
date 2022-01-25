@@ -7,8 +7,8 @@ spec:
   project: default
   source:
     chart: dfp-h-sonarqube-original
-    repoURL: https://github.com/CarlosGR95/argocd
-    path: apps/dfp-h-sonarqube-original
+    repoURL: https://github.com/CarlosGR95/argocd/tree/master/apps/dfp-h-sonarqube-original
+    #path: apps/dfp-h-sonarqube-original
     targetRevision: HEAD
     helm:
       releaseName: dfp-h-sonarqube-original
@@ -16,4 +16,6 @@ spec:
     server: https://kubernetes.default.svc
     namespace: default
   syncPolicy:
-    automated: {}
+    automated:
+      prune: true
+      selfHeal: true
