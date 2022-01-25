@@ -9,7 +9,7 @@ spec:
     #chart: sonarqube
     repoURL: https://github.com/CarlosGR95/argocd
     path: apps/dfp-h-sonarqube-original
-    targetRevision: '1.1.6+121'
+    targetRevision: '1.1'
     #helm:
     #  releaseName: sonarqube
   destination:
