@@ -9,7 +9,7 @@ spec:
     chart: sonarqube
     repoURL: https://SonarSource.github.io/helm-chart-sonarqube
     #path: apps/dfp-h-sonarqube-original
-    targetRevision: 1.1
+    targetRevision: '1.1'
     helm:
       releaseName: sonarqube
   destination:
