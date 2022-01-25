@@ -6,12 +6,12 @@ metadata:
 spec:
   project: default
   source:
-    chart: dfp-h-sonarqube-original
-    repoURL: https://github.com/CarlosGR95/argocd/tree/master/apps/dfp-h-sonarqube-original
+    chart: sonarqube
+    repoURL: https://SonarSource.github.io/helm-chart-sonarqube
     #path: apps/dfp-h-sonarqube-original
-    targetRevision: HEAD
+    targetRevision: 1.1
     helm:
-      releaseName: dfp-h-sonarqube-original
+      releaseName: sonarqube
   destination:
     server: https://kubernetes.default.svc
     namespace: default
