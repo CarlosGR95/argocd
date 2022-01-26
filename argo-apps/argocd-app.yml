@@ -8,9 +8,9 @@ spec:
   source:
     repoURL: https://github.com/CarlosGR95/argocd
     path: apps/argocd
-    targetRevision: feature-app3
+    targetRevision: master
   destination:
     server: https://kubernetes.default.svc
-    namespace: default
+    namespace: argocd
   syncPolicy:
     automated: {}
